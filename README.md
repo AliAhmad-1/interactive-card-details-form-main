@@ -37,8 +37,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/andrewteece/ecommerce-product-page]
-- Live Site URL: [https://andrewteece.github.io/ecommerce-product-page/]
+- Solution URL: [https://github.com/AliAhmad-1/interactive-card-details-form-main]
+- Live Site URL: [https://aliahmad-1.github.io/interactive-card-details-form-main/]
 
 ## My process
 
