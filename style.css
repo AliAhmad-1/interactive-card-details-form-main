@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red: hsl(0, 100%, 66%);
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    gap: 7.5rem;
+}
+
+.side-bg {
+    height: 100vh;
+    width: 400px;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+
+.cart-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    position: relative;
+    left: 6rem;
+}
+
+.card-front {
+    width: 350px;
+    height: 190px;
+    border-radius: 6px;
+    background-image: url(images/bg-card-front.png);
+    padding: 1.5rem;
+}
+
+.card-front img {
+    width: 60px;
+}
+
+.card-front .card-front-text {
+    margin-top: 3rem;
+}
+
+.card-front .card-front-text h5 {
+    color: var(--White);
+    font-weight: lighter;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    margin-left: .6rem;
+}
+
+.card-front .card-front-text .cart-info {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .6rem;
+}
+
+.card-front .card-front-text .cart-info p {
+    color: var(--Light-grayish-violet);
+    letter-spacing: 2px;
+    font-size: .8rem;
+}
+
+.card-back {
+    width: 350px;
+    height: 200px;
+    border-radius: 6px;
+    background-image: url(images/bg-card-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 1.9rem;
+    margin-left: 6rem;
+    position: relative;
+}
+
+.card-back span {
+    color: var(--White);
+    position: absolute;
+    right: 3rem;
+    top: 5.5rem;
+    letter-spacing: 2px;
+}
+
+.content {
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-form {
+    width: 350px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.cart-form .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-top: .9rem;
+}
+
+label {
+    color: var(--Very-dark-violet);
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+input {
+    padding: .5rem .8rem;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 4px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+input:focus {
+    border: 1px solid rgb(67, 67, 171);
+    outline: none;
+}
+
+.flex {
+    margin-top: .8rem;
+    display: flex;
+}
+
+.exp-date {
+    width: 50%;
+}
+
+.cvc {
+    width: 50%;
+}
+
+.exp-date .inline_fields {
+    display: flex;
+    gap: .5rem;
+}
+
+.exp-date .inline_fields input {
+    width: 35%;
+}
+
+.button-confirm {
+    width: 100%;
+    margin-top: 1.3rem;
+    color: var(--White);
+    font-size: .9rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 0.7rem 0;
+    background-color: #21092f;
+    border: none;
+    border-radius: 6px;
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.success img {
+    width: 60px;
+}
+
+.success h2 {
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    color: var(--Very-dark-violet);
+}
+
+.success p {
+    color: var(--Dark-grayish-violet);
+    font-size: 1rem;
+}
+
+.error-message {
+    color: var(--Red);
+    font-family: sans-serif;
+    margin-top: .4rem;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+.error {
+    border: 1px solid var(--Red);
+}
+
+@media (max-width:920px) {
+    .main-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .side-bg {
+        width: 100%;
+        height: 350px;
+        background-image: url(images/bg-main-mobile.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .content {
+        width: 100%;
+    }
+    .cart-form {
+        margin: 4rem 0;
+    }
+    .cart-images {
+        position: relative;
+        left: 0;
+    }
+    .card-front {
+        position: relative;
+        top: 35%;
+        right: 1.8rem;
+        z-index: 999;
+    }
+    .card-back {
+        position: absolute;
+        top: 3.699rem;
+        right: 1.2rem;
+    }
+}
+
+@media (max-width:450px) {
+    .button-confirm {
+        padding: 1rem 0;
+    }
+}
