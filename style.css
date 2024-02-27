@@ -247,7 +247,7 @@ input:focus {
     }
     .card-back {
         position: absolute;
-        top: 3.699rem;
+        top: 3.4rem;
         right: 1.2rem;
     }
 }
@@ -255,5 +255,11 @@ input:focus {
 @media (max-width:450px) {
     .button-confirm {
         padding: 1rem 0;
+    }
+    .card-back {
+        right: .5rem;
+    }
+    .card-front {
+        right: .7rem;
     }
 }
