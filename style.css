@@ -65,7 +65,7 @@ body {
 .card-front .card-front-text h5 {
     color: var(--White);
     font-weight: lighter;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 4px;
     margin-left: .6rem;
 }
